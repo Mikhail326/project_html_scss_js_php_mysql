@@ -1,0 +1,50 @@
+.footer {
+  background-image: url("../img/footer-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  & .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  }
+
+  & .box {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+
+    & h3 {
+      color: var(--white);
+      margin-bottom: 2rem;
+    }
+
+    & a {
+      display: block;
+      color: var(--light-white);
+      margin-bottom: 1rem;
+
+      &:hover i {
+        margin-right: 1.5rem;
+      }
+    }
+
+    & i {
+      color: var(--main-color);
+      margin-right: 0.8rem;
+      transition: 0.3s;
+    }
+  }
+
+  & .credit {
+    border-top: 0.1rem solid var(--light-white);
+    font-size: 1rem;
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 0 4rem 0;
+
+    & span {
+      color: var(--main-color);
+    }
+  }
+}

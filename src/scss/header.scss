@@ -17,8 +17,9 @@
     display: flex;
     gap: 1.5rem;
     transition: 0.3s;
+    background-color: var(--white);
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       display: block;
       position: absolute;
       top: 7rem;
@@ -30,11 +31,11 @@
     }
 
     & a {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: var(--black);
       transition: 0.3s;
 
-      @media(max-width: 768px) {
+      @media (max-width: 768px) {
         display: block;
         margin-bottom: 2rem;
         text-align: center;
@@ -51,7 +52,7 @@
     cursor: pointer;
     display: none;
 
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       display: block;
     }
 
@@ -66,7 +67,7 @@
       &::before {
         position: absolute;
         display: inline-block;
-        content: '';
+        content: "";
         width: 1.8rem;
         height: 0.25rem;
         background-color: var(--black);
@@ -78,13 +79,12 @@
       }
 
       &::before {
-        bottom: -3px;
+        bottom: -2px;
       }
     }
   }
 
   & .active {
-
     & span {
       transform: rotate(45deg);
 
