@@ -17,12 +17,21 @@
     & h3 {
       color: var(--white);
       margin-bottom: 2rem;
+
+      @media(max-width: 450px) {
+        font-size: 1.5rem;
+      }
     }
 
     & a {
       display: block;
       color: var(--light-white);
       margin-bottom: 1rem;
+      font-size: 1rem;
+
+      @media(max-width: 450px) {
+        font-size: 1.2rem;
+      }
 
       &:hover i {
         margin-right: 1.5rem;
