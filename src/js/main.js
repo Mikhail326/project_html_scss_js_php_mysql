@@ -6,4 +6,13 @@ const handleHamburger = () => {
     nav.classList.toggle('active')
 }
 
+
+const swiper = new Swiper(".home__slider", {
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }
+})
+
 hamburger.addEventListener('click', handleHamburger)

@@ -1,53 +1,66 @@
 * {
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 html {
-    font-size: 95%;
+  font-size: 95%;
 }
 
 section {
-    padding: 0 10%;
+  padding: 0 10%;
 }
 
 :root {
-    --main-color: #8a44ad;
-    --black: #222;
-    --white: #fff;
-    --light-black: #777;
-    --light-white: #fff9;
-    --darf-bg: rgba(0, 0, 0, 0.7);
-    --light-bg: #eee;
-    --border: 0.1rem solid var(--black);
-    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+  --main-color: #8a44ad;
+  --black: #222;
+  --white: #fff;
+  --light-black: #777;
+  --light-white: #fff9;
+  --darf-bg: rgba(0, 0, 0, 0.7);
+  --light-bg: #eee;
+  --border: 0.1rem solid var(--black);
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.3);
 }
 
-@media(max-width: 1200px) {
-    section {
-        padding: 0 5%;
-    }
+.swiper-slide-active {
+  & .content {
+    display: inline-block !important;
+  }
 }
 
-@media(max-width: 991px) {
-    html {
-        font-size: 70%;
-    }
-
-    section {
-        padding: 0 2rem;
-    }
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.2);
+    opacity: 0;
+  }
 }
 
-@media(max-width: 450px) {
-    html {
-        font-size: 60%;
-    }
+@media (max-width: 1200px) {
+  section {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 70%;
+  }
+
+  section {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 60%;
+  }
 }
