@@ -1,0 +1,45 @@
+.booking {
+  & .form {
+    background-color: var(--light-bg);
+    padding: 1rem;
+
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      & .inputBox {
+        flex: 1 1 30rem;
+
+        & span {
+          font-size: 1.2rem;
+          color: var(--light-black);
+        }
+
+        & input {
+          width: 100%;
+          padding: 0.7rem 1rem;
+          color: var(--light-black);
+          text-transform: none;
+          margin-top: 0.6rem;
+          border: var(--border);
+
+          &:focus {
+            background-color: var(--black);
+            color: var(--white);
+
+            &:focus {
+              background-color: var(--black);
+              color: var(--white);
+            }
+          }
+        }
+      }
+    }
+
+    & input {
+      margin-top: 1.5rem;
+    }
+  }
+
+}
