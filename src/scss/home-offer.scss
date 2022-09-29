@@ -1,0 +1,20 @@
+.home-offer {
+  text-align: center;
+
+  &__content {
+    max-width: 50rem;
+    margin: 0 auto;
+
+    & h3 {
+      color: var(--blacl);
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    & p {
+      line-height: 2;
+      color: var(--light-black);
+      padding: 1rem 0;
+    }
+  }
+}
