@@ -43,18 +43,21 @@ var swiperReviews = new Swiper(".reviews__slider", {
 
 const showPackages = () => {
   for (let i = courent; i < courent + 3; i++) {
-    if(packages[i] === undefined) {
+    if (packages[i] === undefined) {
       btnShowPackages.style.display = 'none'
       break;
     }
     packages[i].style.display = 'inline-block'
-   
+
   }
   courent += 3;
-  if(packages.length <= courent) {
+  if (packages.length <= courent) {
     btnShowPackages.style.display = 'none'
   }
 }
 
 hamburger.addEventListener('click', handleHamburger)
-btnShowPackages.addEventListener('click', showPackages)
+
+if (btnShowPackages) {
+  btnShowPackages.addEventListener('click', showPackages)
+}

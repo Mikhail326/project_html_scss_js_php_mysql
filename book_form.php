@@ -1,7 +1,5 @@
 <?php 
-
-$connection = mysqli_connect('localhost', 'root', '', 'mikhails_book')
-
+$connection = mysqli_connect('localhost', 'mikhails', 'Ieyah3ia', 'mikhails_book');
 if(isset($_POST['send'])) {
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -13,14 +11,14 @@ if(isset($_POST['send'])) {
     $leaving = $_POST['leaving'];
 
 
-    $_request = " insert into book_form(naem, email, phone, address, location, guests, arrivals, leaving) values 
+    $request = " insert into book_form(name, email, phone, address, location, guests, arrivals, leaving) values 
     ('$name', '$email', '$phone', '$address', '$location', '$guests', '$arrivals', '$leaving')";
 
-    mysqli_query($connection, $_request)
+    mysqli_query($connection, $request);
 
-    header('location:book.html')
+    header('location:book.html');
 } else {
-    echo 'something went wrong tru again'
+   echo 'something went wrong tru again';
 }
 
-?>
+?> 
